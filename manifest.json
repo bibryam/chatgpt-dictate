@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Dictate",
+  "version": "1.0",
+  "description": "Adds keyboard shortcuts for ChatGPT voice dictation. ALT+SPACE to start/submit, ALT+ESC to cancel.",
+  "author": "Bilgin Ibryam (@bibryam)",
+  "homepage_url": "https://github.com/bibryam/chatgpt-dictate",
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://chatgpt.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Open ChatGPT with Dictate",
+    "default_icon": "images/icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
