@@ -1,6 +1,6 @@
-# ChatGPT Dictate
+# ChatGPT Dictate Shortcuts
 
-A Chrome extension that **automatically activates** on ChatGPT pages to provide voice dictation keyboard shortcuts.
+A Chrome extension that **automatically activates** on ChatGPT pages to provide voice dictation keyboard shortcuts and boost productivity.
 
 ## Features
 
@@ -32,7 +32,7 @@ Click for quick access to custom ChatGPT with auto-dictate enabled.
 
 ## Author
 
-**Bilgin Ibryam** ([@bibryam](https://github.com/bibryam))
+**Bilgin Ibryam** ([@bibryam](https://x.com/bibryam))
 
 ## Repository
 

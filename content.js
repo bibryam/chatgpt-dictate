@@ -107,12 +107,12 @@ if (new URLSearchParams(window.location.search).get('auto-dictate') === 'true') 
         if (dictateBtn) {
             dictateBtn.click();
             console.log('ChatGPT Dictate: Auto-started dictation');
-            showNotification('Voice input activated! ALT+SPACE=submit, ALT+ESC=cancel');
+            showNotification('Dictation started! ALT+SPACE=submit, ALT+ESC=cancel');
         }
     }, 2000);
 } else {
     // Show notification that shortcuts are ready
     setTimeout(() => {
-        showNotification('Ready! Use ALT+SPACE to start dictating, ALT+ESC to cancel');
+        showNotification('Use ALT+SPACE to start dictating, ALT+ESC to cancel');
     }, 1000);
 } 

@@ -1,7 +1,7 @@
 chrome.action.onClicked.addListener((tab) => {
     // Open ChatGPT with the specific custom GPT
     // Add auto-dictate=true parameter to automatically start dictation
-    const chatgptUrl = `https://chatgpt.com/g/g-67c058bbf6388191b671f0e642030c2d-simple-user-story-prd?temporary-chat=true&auto-dictate=true`;
+    const chatgptUrl = `https://chatgpt.com/?auto-dictate=true`;
 
     chrome.tabs.create({ url: chatgptUrl }, (newTab) => {
         // Wait for ChatGPT to load, then set up the extension
@@ -30,7 +30,7 @@ function activateVoiceInput() {
     } else {
         // Don't auto-start, but show notification about keyboard shortcuts
         setTimeout(() => {
-            showNotification('Ready! Use ALT+SPACE to start dictating, ALT+ESC to cancel');
+            showNotification('Use ALT+SPACE to start dictating, ALT+ESC to cancel');
         }, 1000);
     }
 
@@ -125,7 +125,7 @@ function activateVoiceInput() {
             voiceButton.click();
             
             // Show a brief notification that voice input was activated
-            showNotification('Voice input activated! ALT+SPACE=submit, ALT+ESC=cancel');
+            showNotification('Dictation started! ALT+SPACE=submit, ALT+ESC=cancel');
             return true;
         }
         
